@@ -60,7 +60,7 @@ import com.tzutalin.dlib.Constants;
 import com.tzutalin.dlib.FaceRec;
 import com.tzutalin.dlib.VisionDetRet;
 
-import junit.framework.Assert;
+//import junit.framework.Assert;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -123,19 +123,19 @@ public class MainActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_main);
         checkPermissions();
 
-        mCameraView = (CameraView) findViewById(R.id.camera);
+        mCameraView = findViewById(R.id.camera);
         if (mCameraView != null) {
             mCameraView.addCallback(mCallback);
         }
-        Button fab = (Button) findViewById(R.id.take_picture);
+        Button fab = findViewById(R.id.take_picture);
         if (fab != null) {
             fab.setOnClickListener(mOnClickListener);
         }
-        Button add_person = (Button) findViewById(R.id.add_person);
+        Button add_person = findViewById(R.id.add_person);
         if (add_person != null) {
             add_person.setOnClickListener(mOnClickListener);
         }
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -384,7 +384,7 @@ public class MainActivity extends AppCompatActivity implements
                 mScreenRotation = 0;
             }
 
-            Assert.assertEquals(dst.getWidth(), dst.getHeight());
+//            Assert.assertEquals(dst.getWidth(), dst.getHeight());
             final float minDim = Math.min(src.getWidth(), src.getHeight());
 
             final Matrix matrix = new Matrix();

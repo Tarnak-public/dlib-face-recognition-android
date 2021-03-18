@@ -9,6 +9,8 @@ Face recognition is very accurate but it takes approximately 6 seconds on a Redm
 
 ## Usage
     git clone --recursive https://github.com/gv22ga/dlib-face-recognition-android.git
+    
+    git clone --recursive https://github.com/Tarnak-public/dlib-face-recognition-android.git
 Now you can directly open the `dlib-face-recognition-app` in android studio
 
 ## Build JNI (Optional)

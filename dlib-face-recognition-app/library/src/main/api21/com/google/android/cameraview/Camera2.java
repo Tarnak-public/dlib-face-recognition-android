@@ -41,7 +41,7 @@ import java.util.Set;
 import java.util.SortedSet;
 
 @SuppressWarnings("MissingPermission")
-@TargetApi(21)
+@android.support.annotation.RequiresApi(api = android.os.Build.VERSION_CODES.LOLLIPOP)
 class Camera2 extends CameraViewImpl {
 
     private static final String TAG = "Camera2";
